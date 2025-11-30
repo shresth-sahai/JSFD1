@@ -72,8 +72,11 @@ public class Hello{
 public class Solution{
        public static void main(String[] args){
                      byte x = 127;
+                     byte y= x+=2;
+                    
                      x++;
                      x++;
+
                      System.out.print(x);
        }
 }
@@ -84,14 +87,14 @@ public class Solution{
 //         b--;
 //         System.out.print(b);
 //     }
-// }
+// } 127 
 
 // public class Test {
 //     public static void main(String[] args) {
 //         byte b = 125;
 //         b += 5;   // b=b+5 
 //         System.out.print(b);
-//     }
+//     } -126 
 // }
 
 // public class Test {
@@ -99,14 +102,14 @@ public class Solution{
 //         char c = 65535;
 //         c++;
 //         System.out.print((int)c);
-//     }
+//     } // 0 
 // }
 // public class Test {
 //     public static void main(String[] args) {
 //         short s = 32767;
 //         s++;
 //         System.out.print(s);
-//     }
+//     } -32768
 // }
 
 // public class Test {
@@ -114,5 +117,93 @@ public class Solution{
 //         byte b = 100;
 //         b = (byte)(b * 3);
 //         System.out.print(b);
-//     }
+//     } 
+// } //  -128 to 127 (256 values )
+// 300 
+// -128 -127 -126 ....... 127 
+// 44 
+// trick 
+// 300 -256 = 44
+// 129 -256= -127 
+
+// types of conversion 
+// widening / automatic conversion ->lower data type to. ahigher data type 
+int var=10;
+long varLong=var; // automatic converiosn 
+
+//2 narrowing / expliict 
+int intvar=10;
+byte bvar=(byte) intvar;
+
+// kind of variables 
+// 1 member variable -> 
+public class Car{
+    int year;
+    double speed; // member /instance variables
+}
+// 2 function -> performs a specific task 
+// inside a fucntion/method -> local varaibles 
+
+//3 static variables -> only 1 copy all object -> share the memory 
+
+// non prmitive data -> reference types 
+
+// string interface array class
+
+public class Employee{
+    int empId;
+
+    public int getEmpId(){
+        return empId;
+    }
+    public void setEmpId(){
+        this.empId=empId;
+    }
+}
+public class Student {
+    public static void main(String[] args){
+        Employee empObj=new Employee(); // new -> allocated memory , heap memory 
+    }
+    // in java everthing is pass by value 
+    
+}
+// String -> immutable , string literal 
+// heap memory -> string constant pool 
+String s1="hello";
+String s2="hello";
+
+// s1 , s2 -> heap ("hello") string constant pool 
+String s3=new String("hello"); // here it will stored as normal obj 
+
+
+// interface -> 
+// public interface InnerHello {
+// public String prof(); 
 // }
+
+// public class Teacher implements InnerHello{
+
+// }
+
+// public class Swe implements InnerHello{
+    
+// }
+
+// array -> sequence of memory storing same data tyep 
+int [] arr=new int[5];
+
+// arr[0]=10;
+// 
+
+// wrapper class -> autobxing , unboxing 
+
+
+// int ->Integer 
+// call by reference ->
+
+Integer a1=10;
+int a=10;
+Integer b=a; // autoboxing 
+
+
+
