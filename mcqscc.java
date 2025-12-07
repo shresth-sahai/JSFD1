@@ -69,3 +69,57 @@
 // c) JVM picks a random constructor
 // d) The parent constructor doesn't execute
 // }
+
+
+// Create a class Bank with:
+
+// static variable bankName = "HDFC"
+
+// static method changeBank(String)
+
+// instance variables: name, balance
+
+// constructor to initialize instance variables
+
+// instance method showAccountDetails()
+
+// Task:
+
+// In main:
+
+// Create 2 Bank objects
+
+// Change bank name using static method
+
+// Show both objects' details
+
+// Observe static variable effect.
+
+
+
+
+// Create an abstract class Animal with:
+
+// Constructor → print "Animal created"
+
+// abstract method sound()
+
+// final method sleep() → print "Animal sleeping"
+
+// Create subclass Dog:
+
+// Constructor → print "Dog created"
+
+// Implement sound() → "Dog barks"
+
+// Try overriding sleep() (should be commented due to error)
+
+// Task:
+
+// In main:
+
+// Create object of Dog (using reference of Animal)
+
+// Show constructor order
+
+// Call sound() and sleep()
