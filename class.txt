@@ -39,3 +39,77 @@ public abstarct class LuxuxryCar extends Car{
     }
     public abstarct void fuel();
 }
+
+
+coding question :
+
+Coding Question:
+
+Create an abstract class Shape with:
+
+One abstract method:
+
+double area();
+
+
+One non-abstract method:
+
+void displayType()
+
+
+Create two concrete classes:
+
+Circle → constructor takes radius
+
+Rectangle → constructor takes length, width
+
+Each class should:
+
+Implement the area() method
+
+Print the correct area using System.out.println()
+
+Task:
+
+In main():
+
+Create one Circle object and one Rectangle object
+
+Call displayType() and area() on both
+
+
+
+1. Which of the following statements about an abstract class is TRUE?
+
+a) It can be instantiated directly
+b) It may contain zero or more abstract methods
+c) It must have at least one abstract method
+d) All methods in it must be abstract
+
+2. A concrete class is a class that:
+
+a) Cannot be extended
+b) Cannot contain methods
+c) Provides implementation for all inherited abstract methods
+d) Must be declared as final
+
+3. Which keyword is used to declare an abstract class in Java?
+
+a) virtual
+b) abstract
+c) base
+d) override
+
+4. What happens if a subclass of an abstract class does NOT implement all abstract methods?
+
+a) It compiles normally
+b) It becomes an abstract class itself
+c) It becomes a concrete class
+d) JVM auto-implements the missing methods
+
+5. Which of the following can a concrete class contain?
+
+a) Only abstract methods
+b) Only static methods
+c) Only final methods
+d) Both implemented and overridden methods
