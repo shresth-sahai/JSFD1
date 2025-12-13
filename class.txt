@@ -1,0 +1,41 @@
+concrete class -> 
+we can create a instance of them using new 
+class Person{
+    int empId;
+    Person(int empId){
+
+    }
+}
+// interface -> 
+public interface Shape{
+    public void area();
+}
+class Rectange implements Shape{
+
+    @Oevrride
+    public area(){
+
+    }
+}
+
+abstarct class 
+hide intenal implementation 
+public abstarct class Car{
+    int mileage;
+    Car(){
+
+    }
+    public abstarct void pressBreak();
+
+    public int getWheels(){
+        return 4;
+    }
+}
+
+public abstarct class LuxuxryCar extends Car{
+    @Override 
+    public void pressBreak(){
+        
+    }
+    public abstarct void fuel();
+}
