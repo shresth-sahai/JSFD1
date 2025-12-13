@@ -1,0 +1,14 @@
+
+Memory management -> 
+
+2 types pf memory :
+stack -> stores temp variable & sep memeory fr functions, primitive data types 
+stores reference of heap objects
+THread -> own stack memory 
+variable within a scope is only visbible once scope get over it gets deleted 
+
+heap 
+stores objects 
+garbage collector -> is used to delete unrefereced objects from the heap 
+heap memory is shared 
+
