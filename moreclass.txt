@@ -89,3 +89,73 @@ a) POJO class
 b) Final class
 c) Anonymous inner class
 d) Static nested class
+
+
+
+Question : 
+
+
+A POJO Class — Student
+
+Create a POJO class with:
+
+private fields: rollNo, name, marks
+
+getters & setters
+
+parameterized constructor
+
+toString() method
+
+A Utility Class — StudentUtil
+
+Create a Utility class with:
+
+a static method calculatePercentage(Student s)
+
+a static method isPassed(Student s) (pass if marks ≥ 40)
+
+a private constructor to prevent object creation
+
+A Generic Class — Box<T>
+
+Create a generic class that can store ANY type:
+
+private field value
+
+setter method
+
+getter method
+
+A Singleton Class — DatabaseConnection
+
+Create a Singleton class:
+
+private static instance
+
+private constructor
+
+public static getInstance()
+
+a method connect() that prints "Connected to database"
+
+Write the Main class to do the following:
+
+In the main method:
+
+Create a Student object
+
+Use Utility class to calculate percentage and pass/fail
+
+Use a Generic Box to store the Student object
+
+Access the Singleton and call connect()
+
+Print all outputs
+
+EXPECTED OUTPUT (example)
+Student: RollNo=101, Name=Amit, Marks=85
+Percentage: 85.0
+Result: Passed
+Box contains: Student object
+Connected to database
