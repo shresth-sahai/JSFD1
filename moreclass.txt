@@ -1,0 +1,91 @@
+
+Singleton class -> ensures only one object of the class can ever be created in entire app
+Databases -> only 1 obj 
+
+class Singleton {
+
+    private static SingleTon instance=null;
+
+    private SingleTon() {}
+
+
+    public static SingleTon getInstance(){
+        if(instance==null) instance=new SingleTon();
+        return instance;
+    }
+}
+SingleTon obj=new SingleTon.getInstance();
+
+
+POJO class->plain old java object 
+simple data carrying class witb private fields
+public getters & setters 
+no buisness logic 
+why -> to store datta and transfer data between layers
+class Student{
+    int id; string name; 
+
+    public Student(){}
+    public Student(int id,String name){this.id=id;this.name=name;}
+
+    // getter & seeters 
+    public int getId(){ return id;}
+    public void setId(int id){this.id=id;}
+
+}
+
+Generic Class -> 
+it allows us to create class es that work with any data tyep 
+class intbox class stringbox
+class Box <T> { } -> tyep safety and code
+
+class Box<T>{
+
+private T value;
+
+public void setValue(T value){
+    this.value=value;
+}
+public T getValue(){
+    return value;
+}
+}
+Box <Integer> intbox=new Box<>();
+intbox.setValue(10);
+
+
+
+6. A Singleton class ensures:
+
+a) Only one instance of the class exists at a time
+b) The class cannot be inherited
+c) The class cannot have constructors
+d) The class must be abstract
+
+7. A POJO (Plain Old Java Object) class typically contains:
+
+a) Business logic and database operations
+b) Getters, setters, constructors, and private fields
+c) Only static methods
+d) Only abstract methods
+
+8. Which of the following is TRUE about utility classes?
+
+a) They are always abstract
+b) They contain only static methods and variables
+c) They cannot be final
+d) They always have public constructors
+
+9. Which type of class must provide implementation for all inherited abstract methods?
+
+a) Abstract class
+b) Concrete class
+c) Anonymous class
+d) Final class
+
+10. Which type of class is typically used for short usage like event listeners or comparators?
+
+a) POJO class
+b) Final class
+c) Anonymous inner class
+d) Static nested class
