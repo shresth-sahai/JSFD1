@@ -1,0 +1,95 @@
+
+// OOPS principal 
+
+interface can be used as Data Type 
+we cannot create an object but it holds reference of class which implmenets 
+public class Main{
+
+    public static void main(String[] args){
+        Bird bobj1=new Bird();
+
+
+        bobj1.fly();
+    }
+}
+
+
+abstract class           VS         interfaces 
+constructor                         no 
+it can provide
+impl of interface.                      no 
+static, non staitc etc.              Constants 
+
+
+
+
+
+1. Which keyword is used to declare an interface in Java?
+
+a) class
+b) interface
+c) implements
+d) abstract
+
+2. How does a class use an interface in Java?
+
+a) extends
+b) implements
+c) inherits
+d) uses
+
+3. Which of the following is TRUE about methods in an interface (Java 8+)?
+
+a) All methods must be abstract
+b) Interfaces can have default and static methods
+c) Interfaces cannot have method bodies
+d) Interfaces can have constructors
+
+4. Can an interface contain instance variables?
+
+a) Yes, any type
+b) Yes, but not final
+c) No, only constants (public static final)
+d) No variables are allowed
+
+5. Which of the following is allowed in an interface?
+
+a) Constructor
+b) Instance variable
+c) Abstract method
+d) Non-static initializer block
+
+6. A class can implement how many interfaces?
+
+a) Only one
+b) Two
+c) Three
+d) Multiple
+
+7. Which access modifier is applied by default to interface methods?
+
+a) protected
+b) private
+c) public
+d) default
+
+8. Which keyword is used to resolve method name conflicts when two interfaces have the same default method?
+
+a) super
+b) this
+c) InterfaceName.super
+d) default
+
+9. Which of the following is TRUE about interface variables?
+
+a) They are private by default
+b) They are instance variables
+c) They are public static final by default
+d) They can be changed at runtime
+
+10. Which statement correctly differentiates an interface from an abstract class?
+
+a) Interfaces support constructors
+b) Abstract classes support multiple inheritance
+c) Interfaces support multiple inheritance
+d) Abstract classes cannot have methods with body

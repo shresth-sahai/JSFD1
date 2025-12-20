@@ -1,0 +1,28 @@
+interfaces {
+    
+}
+interface -> it allows system to intercat with each other without one 
+system has to know the deatils abt the other 
+
+abstraction 
+
+
+public interface Bird {
+    
+    public void fly();
+
+}
+
+public interface NonFlyingBird extends Bird, LivingThings{
+
+    public void canRun();
+}
+
+abstraction -> using interface we achieve full abstraction 
+
+public class Eagle implements Bird{
+    @Override
+    public void fly(){
+        
+    }
+}
