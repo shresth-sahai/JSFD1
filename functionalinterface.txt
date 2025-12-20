@@ -1,0 +1,38 @@
+public class functionalinterface {
+    
+}
+functionalinterface is interace comatineing one abstract functionalinterface
+
+@FunctionalInterface
+public interface Bird{
+    void canFly(String val);
+    void getHeight(); -> err 
+}
+// if i require a single kind of behavior from a specifc object or functionalinterface
+// then use this 
+
+lambda expression is way to implement functionalinterface
+
+use implements 
+use Anonymous 
+use lambda expression
+
+@FunctionalInterface
+public interface Bird{
+    void canFly(String val);
+}
+public class Eagle implements Bird{
+    @Override
+    public void canFly(String val){
+
+    }
+}
+2
+Bird b=new Bird();
+@Override
+public void canFly(){
+    system.out.Print()
+}
+3 lambda expression
+
+https://medium.com/@nagarjun_nagesh/functional-interfaces-in-java-fe5ebf5bafed
