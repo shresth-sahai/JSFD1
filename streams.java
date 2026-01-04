@@ -419,6 +419,7 @@
 
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
+import java.lang.classfile.ClassFile.Option;
 import java.util.*;
 class Main {
     public static void main(String[] args) {
@@ -438,5 +439,39 @@ class Main {
         //     list.stream().
         //         flatMap(innerList-> innerList.stream())
         //             .forEach(n -> System.out.println(n));
+
+
+
+        List<String> numbers=Arrays.asList("2","1","2");
+
+        IntStream nstream=numbers.stream().mapToInt((String val)-> Integer.parseInt(val));
+
+
+        // WHy ? Intermiediate lazy ope-> 
+        // count -> 
+  List<Integer> number1=Arrays.asList(1,2);
+
+        Optional<Integer> reducedVal=numbers1.stream()
+                .reduce((Integer val1,Integer val2)-> (val1*2/10+100+val2));
+
+                // collect -> used to collect elements and store them as List 
+
+                // anyMatch -> checks id any any in steam mathcing the return boolean 
+
+                // allMatch 
+                // noneMatch 
+
+                // findFIrst 
+                //findRandom
+
+                // one terminal operation is used and it closed then the stream cannot be reused 
+
+
+
+                // parellel stream -> 
+                //concurrently 
+                // tkae advantage od core cpu 
+
+        
     }
 }
