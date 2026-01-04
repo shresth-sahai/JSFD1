@@ -171,3 +171,23 @@
 // b) It is a terminal operation
 // c) It transforms each element of the stream
 // d) It can be used only once per stream
+
+
+// map -> transformation of each elemet 
+// Stream -> flat map -> [2d] -> [1d]
+
+List<List<String>> sentencelist=Arrays.asList(
+    Arrays.asList("1","2","3") ,
+    Arrays.asList("1","2","3"),
+    Arrays.asList("1","2","3")
+);
+Stream<String> word1=sentencelist.stream()
+    .flatMap((List<String> sentence)-> sentence.stream());
+
+Stream<String> w2=sentence.stream()
+.flatMap((List<String> sen)-> sen.stream().map(String val)->val.toLowerCase());
+
+Integer[] arr={1,4,5,53};
+Stream<Integer> arrStream=Arrays.stream(arr).distinct();
+Stream<Integer> arrStream=Arrays.stream(arr).sorted();
+Stream<Integer> arrStream=Arrays.stream(arr).sorted((Integer val1,Integer val2)-> val2-val1);
