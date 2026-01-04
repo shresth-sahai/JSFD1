@@ -411,3 +411,32 @@
 
 // Expected Output:
 // 1 2 3 4 5
+
+
+
+
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        
+        
+        // List<Integer> list=Arrays.asList(1,2,34,0,34);
+        
+        // list.stream().
+        //     distinct().
+        //     sorted().
+        //     forEach(System.out::println);
+        
+        // List<List<Integer>> list=Arrays.asList(
+        //     Arrays.asList(1,2,3),
+        //     Arrays.asList(4,2,3)
+        //     );
+        //     list.stream().
+        //         flatMap(innerList-> innerList.stream())
+        //             .forEach(n -> System.out.println(n));
+    }
+}
