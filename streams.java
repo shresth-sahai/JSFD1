@@ -191,3 +191,123 @@ Integer[] arr={1,4,5,53};
 Stream<Integer> arrStream=Arrays.stream(arr).distinct();
 Stream<Integer> arrStream=Arrays.stream(arr).sorted();
 Stream<Integer> arrStream=Arrays.stream(arr).sorted((Integer val1,Integer val2)-> val2-val1);
+
+
+
+// 1. What will be the output of the following code?
+// List<Integer> list = Arrays.asList(1, 2, 3, 4);
+// list.stream()
+//     .map(x -> x * 2)
+//     .forEach(System.out::print);
+
+
+// a) 1234
+// b) 2468
+// c) 2 4 6 8
+// d) Compilation error
+
+// 2. What is the result of this stream operation?
+// List<String> list = Arrays.asList("a", "bb", "ccc");
+// list.stream()
+//     .map(String::length)
+//     .forEach(System.out::print);
+
+
+// a) abc
+// b) 123
+// c) 1 2 3
+// d) Compilation error
+
+// 3. What does this code produce?
+// List<Integer> list = Arrays.asList(1, 2, 2, 3, 3);
+// list.stream()
+//     .distinct()
+//     .forEach(System.out::print);
+
+
+// a) 123
+// b) 12233
+// c) 1 2 3
+// d) Runtime exception
+
+// 4. What will be the output?
+// List<Integer> list = Arrays.asList(5, 3, 1, 4);
+// list.stream()
+//     .sorted()
+//     .forEach(System.out::print);
+
+
+// a) 5314
+// b) 1345
+// c) 5431
+// d) Compilation error
+
+// 5. What is the output of the following?
+// List<List<Integer>> list = Arrays.asList(
+//     Arrays.asList(1, 2),
+//     Arrays.asList(3, 4)
+// );
+
+// list.stream()
+//     .flatMap(l -> l.stream())
+//     .forEach(System.out::print);
+
+
+// a) [1,2][3,4]
+// b) 1234
+// c) 12 34
+// d) Compilation error
+
+// 6. What will this code print?
+// List<String> list = Arrays.asList("java", "stream", "api");
+// list.stream()
+//     .map(s -> s.toUpperCase())
+//     .sorted()
+//     .forEach(System.out::print);
+
+
+// a) JAVASTREAMAPI
+// b) APIJAVASTREAM
+// c) STREAMJAVAAPI
+// d) Runtime error
+
+// 7. Which operation is responsible for converting a nested structure into a flat structure?
+// List<List<String>> list = ...
+
+
+// a) map()
+// b) filter()
+// c) flatMap()
+// d) distinct()
+
+// 8. What is the output of the following code?
+// List<Integer> list = Arrays.asList(3, 1, 2, 3, 2);
+// list.stream()
+//     .distinct()
+//     .sorted()
+//     .forEach(System.out::print);
+
+
+// a) 31232
+// b) 123
+// c) 321
+// d) Compilation error
+
+// 9. What will be printed?
+// List<String> list = Arrays.asList("a", "bb", "ccc");
+// list.stream()
+//     .flatMap(s -> Stream.of(s.length()))
+//     .forEach(System.out::print);
+
+
+// a) abc
+// b) 123
+// c) 1 2 3
+// d) Compilation error
+
+// 10. Which of the following statements is TRUE?
+
+// a) map() removes duplicates
+// b) flatMap() returns Stream<Stream<T>>
+// c) distinct() uses equals() and hashCode()
+// d) sorted() modifies the original collection
