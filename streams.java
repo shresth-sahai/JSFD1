@@ -311,3 +311,20 @@ Stream<Integer> arrStream=Arrays.stream(arr).sorted((Integer val1,Integer val2)-
 // b) flatMap() returns Stream<Stream<T>>
 // c) distinct() uses equals() and hashCode()
 // d) sorted() modifies the original collection
+
+
+// peek ->helps in finidng intermediate results 
+
+List<Integer>  numbers= Arrays.asList(2,1,3,4,6);
+Stream<Integer> numberStream=numbers.stream().
+                    filter((Integer val)-> val>2) 
+                    .peek((Integer val)-> System.out.print(val)) // 3 4 6 
+                    .map((Integer val)->1 +val);
+
+
+Stream<Integer> numberStream1=numbers.stream().limit(3);      // 2 1 3 
+List<Integer> numberans=numberStream1.collect(Collectors.toList());
+
+
+// skip 
+Stream<Integer> numberStream1=numbers.stream().skip(3); // 4,6 
