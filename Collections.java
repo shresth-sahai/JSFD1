@@ -77,4 +77,37 @@ System.out.print(values.size());
 values.clear()
 System.out.print(values.isEmpty(O));
 
+/*
+Exception handling 
+
+OBject -> throwables -> err 
+                    -> excetion -> checked(compile ,try catch throws)(IO,SQL,Filefound) , 
+                    unchecked-> Run time -> Nullpointer, Arithmatic,array index of bound
+     try-> code that may cause exception
+     catch-> hadnles exception
+     finaaly always executes 
+     throw explictly throws expection 
+     throws -> declare exceptio n
+
+
+
+
+
+int a=1;int b=0;
+try{
+
+}
+catch(ArthimeticException e){
+
+}
+finally{
+}
+
+if(age<18 ){
+throw new Exception ("")}
+
+
+void filename() throws IOexpection{
+}
+*/
 }
