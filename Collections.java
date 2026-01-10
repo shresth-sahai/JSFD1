@@ -138,3 +138,19 @@ Student(int rollno,int age,String name,String course)
 
 
 }
+
+
+class VOter{
+
+    int voterId;
+    int age;
+    String name;
+    VOter(int voterId,String name,int age){
+        if(age<!8){
+            throw new IllegalArgumentException("Invalid age!");
+        }
+        this.voterId=voterId;
+        this.name=name;
+        this.age=age;
+    }
+}
