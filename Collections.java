@@ -111,3 +111,30 @@ void filename() throws IOexpection{
 }
 */
 }
+
+class AgeNotWithinRangeException extends Exception{
+    public AgeNotWithinRangeException(String message){
+        super(message);
+    }
+}
+class NameNotValidException extends Exception{
+    public NameNotValidException(String message){
+        super(message);
+    }
+}
+
+class Student{
+int rollno;
+int age;
+String course;
+
+Student(int rollno,int age,String name,String course)
+{
+        if(age<15 || age>21){
+            throw new AgeNotWithinRangeException("")
+        }
+        if(!name)
+}
+
+
+}
