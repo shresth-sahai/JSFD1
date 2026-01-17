@@ -120,4 +120,42 @@ A) The thread runs twice. B) Two separate threads are created. C) It throws an I
 A) Thread.sleep(1); B) Thread.sleep(1000); C) this.wait(1000); D) Thread.yield(1000);
 
 10. Which statement about the "Process vs Thread" section of your notes is TRUE? A) Processes share the same memory; threads have separate memory. B) A process is a lightweight thread. C) Multiple threads exist within the context of a single process. D) Threads are more "heavyweight" than processes.
+
+// execution of threads is we dont have control 
+
+->ccontrol of order of executon 
+// if i do this via multiple thread -> 
+class Counter{
+int count=0;
+void ince(){
+count++;}
+}
+// synchrozsed block 
+
+// work correctly with threads 
+class Counter{
+int count=0;
+
+synchronised void increment(){
+    count++;
+}
+}
+
+// each object will be having a lock 
+// only one thread will be held at a time and then only it will move to the next thread 
+
+
+wait() notify() notifyall()
+
+
+
+
+
+
+
+
+
+
+
+
 */
