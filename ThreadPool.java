@@ -27,7 +27,7 @@ public class ThreadPool {
 
 
 
-     Callable -> return vakeu 
+     Callable -> return value 
       & Future 
 
       Runnable-> no return 
